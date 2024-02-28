@@ -19,7 +19,8 @@
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
-	text-align: center;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .listItem {
