@@ -1,7 +1,11 @@
-.myButton{
-	border: 2px solid #00D8FF;
-	background: inherit;
-	width: 100px;
-	height: 30px;
-	cursor: pointer;
+.myButton {
+  display: block;
+  border: 2px solid #00d8ff;
+  background: inherit;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-left: 5px;
+
 }

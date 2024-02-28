@@ -1,11 +1,9 @@
 import MyButton from '../UI/MyButton/MyButton';
-
-const LoginRegister = () => {
-  let user = false;
-
+import styles from './LoginRegister.module.css';
+const LoginRegister = ({ user }) => {
   if (user) {
     return (
-      <div style={{ textAlign: 'center' }}>
+      <div className={styles.wrapper}>
         <MyButton>Избранное</MyButton>
         <MyButton>История</MyButton>
         <MyButton>Выход</MyButton>
@@ -13,7 +11,7 @@ const LoginRegister = () => {
     );
   } else {
     return (
-      <div style={{ textAlign: 'center' }}>
+      <div className={styles.wrapper}>
         <MyButton>Войти</MyButton>
         <MyButton>Регистрация</MyButton>
       </div>

@@ -7,6 +7,8 @@ import PostService from './API/PostService';
 import Loader from './components/UI/Loader/Loader';
 
 function App() {
+  const [user, setUser] = useState(false);
+  setUser(false);
   const [posts, setPosts] = useState([]);
   const [isPostsLoading, setIsPostsLoading] = useState(false);
 
@@ -23,7 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header></Header>
+      <Header user={user}></Header>
       {isPostsLoading ? (
         <div
           style={{ display: 'flex', justifyContent: 'center', marginTop: 50 }}
