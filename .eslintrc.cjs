@@ -25,5 +25,7 @@ module.exports = {
       'error',
       { allowShortCircuit: true, allowTernary: true },
     ],
+    'prettier/prettier': ['warn'],
+		"react/prop-types": "off",
   },
 };
